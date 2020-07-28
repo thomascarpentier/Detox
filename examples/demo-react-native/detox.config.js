@@ -46,10 +46,12 @@ module.exports = {
     },
     "android.emu.release": {
       "binaryPath": "android/app/build/outputs/apk/release/app-release.apk",
-      "build": "cd android ; ./gradlew assembleRelease assembleAndroidTest -DtestBuildType=release ; cd -",
-      "type": "android.emulator",
-      "device": {
-        "avdName": "Pixel_API_28"
+      "build": "cd android ; ./gradlew assembleRelease assembleAndroidTest  -DtestBuildType=release ; cd -",
+      "type": "android.attached",
+      "name": "localhost:49271",
+      "session": {
+        "server": "ws://localhost:8099",
+        "sessionId": "com.wix.demo.react.native"
       }
     }
   }
