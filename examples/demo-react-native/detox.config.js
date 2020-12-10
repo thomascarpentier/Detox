@@ -49,10 +49,6 @@ module.exports = {
       "build": "cd android ; ./gradlew assembleRelease assembleAndroidTest  -DtestBuildType=release ; cd -",
       "type": "android.attached",
       "name": "localhost:49271",
-      "session": {
-        "server": "ws://localhost:8099",
-        "sessionId": "com.wix.demo.react.native"
-      }
     }
   }
 };
